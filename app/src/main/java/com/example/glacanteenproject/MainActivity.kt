@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity() {
             signup_button_LoginPage.isEnabled = true
             forgetpassword.isEnabled = true
             Toast.makeText(baseContext,"Login sucsessful", Toast.LENGTH_SHORT).show()
-            //val intent = Intent(this,ItemListPageAfterLoginUser::class.java)
+            val intent = Intent(this,ItemListPageAfterLoginUser::class.java)
             startActivity(intent)
             finish()
         }
@@ -110,7 +110,7 @@ class MainActivity : AppCompatActivity() {
         //updateUI(user)
         if(user!=null){
             Toast.makeText(baseContext,"Login sucsessful", Toast.LENGTH_SHORT).show()
-            //startActivity(Intent(this,ItemListPageAfterLoginUser::class.java))
+            startActivity(Intent(this,ItemListPageAfterLoginUser::class.java))
             finish()
         }
 
