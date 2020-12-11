@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "479389352634",
+    "project_id": "glacanteenproject",
+    "storage_bucket": "glacanteenproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479389352634:android:ab625253de76c87c39f883",
+        "android_client_info": {
+          "package_name": "com.example.glacanteenproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479389352634-chhld1k3c2peaeh4t8m0sh2utu3e5dgi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGyrsTWQsy1pJp1F_-GQK0wKz0DjT1tuk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479389352634-chhld1k3c2peaeh4t8m0sh2utu3e5dgi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
