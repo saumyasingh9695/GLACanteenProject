@@ -131,7 +131,30 @@ class ItemListPageAfterLoginUser : AppCompatActivity() {
 
         navView.setNavigationItemSelectedListener {
             when(it.itemId){
-
+               /* R.id.available -> {
+                    available= Available()
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.container, available)
+                        .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).commit()
+                    searchView.setVisibility(View.GONE)
+                    recyclerView.setVisibility(View.GONE)
+                }
+                R.id.request ->{
+                    request = Request()
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.container, request)
+                        .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).commit()
+                    searchView.setVisibility(View.GONE)
+                    recyclerView.setVisibility(View.GONE)
+                }
+                R.id.messeges ->{
+                    messeges = Messeges()
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.container, messeges)
+                        .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).commit()
+                    searchView.setVisibility(View.GONE)
+                    recyclerView.setVisibility(View.GONE)
+                }*/
                 R.id.logout ->{
                     FirebaseAuth.getInstance().signOut();
                     Toast.makeText(baseContext, "Logged out Successfully", Toast.LENGTH_SHORT).show()
