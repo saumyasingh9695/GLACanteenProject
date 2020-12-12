@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">GLACanteenProject</string>
+    <string name="open" />
+    <string name="close" />
 </resources>
