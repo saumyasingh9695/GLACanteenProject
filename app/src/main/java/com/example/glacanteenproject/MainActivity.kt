@@ -58,9 +58,9 @@ class MainActivity : AppCompatActivity() {
         }
         progressBar.visibility = View.VISIBLE
         loginbutton.isEnabled = false
-        login_phone.isEnabled = false
+       // login_phone.isEnabled = false
         signup_button_LoginPage.isEnabled = false
-        forgetpassword.isEnabled = false
+       // forgetpassword.isEnabled = false
         Auth.signInWithEmailAndPassword(username.text.toString(),password.text.toString()).addOnCompleteListener{
                 task ->
             if(task.isSuccessful){
@@ -80,9 +80,9 @@ class MainActivity : AppCompatActivity() {
         if(currentuser!=null){
             progressBar.visibility = View.GONE
             loginbutton.isEnabled = true
-            login_phone.isEnabled = true
+           // login_phone.isEnabled = true
             signup_button_LoginPage.isEnabled = true
-            forgetpassword.isEnabled = true
+            //forgetpassword.isEnabled = true
             Toast.makeText(baseContext,"Login sucsessful", Toast.LENGTH_SHORT).show()
             val intent = Intent(this,ItemListPageAfterLoginUser::class.java)
             startActivity(intent)
@@ -97,9 +97,9 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(baseContext, "Login Failed", Toast.LENGTH_SHORT).show()
             progressBar.visibility = View.GONE
             loginbutton.isEnabled = true
-            login_phone.isEnabled = true
+            //login_phone.isEnabled = true
             signup_button_LoginPage.isEnabled = true
-            forgetpassword.isEnabled = true
+            //forgetpassword.isEnabled = true
         }
 
     }
