@@ -31,6 +31,7 @@ class ItemListPageAfterLoginUser : AppCompatActivity() {
     private lateinit var user : FirebaseUser
     private lateinit var fAuth : FirebaseAuth
     private  var checker : Int = 0
+    lateinit var cart : Cart
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_item_list_page_after_login_user)
@@ -131,15 +132,15 @@ class ItemListPageAfterLoginUser : AppCompatActivity() {
 
         navView.setNavigationItemSelectedListener {
             when(it.itemId){
-               /* R.id.available -> {
-                    available= Available()
+                R.id.cart -> {
+                    cart = Cart()
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.container, available)
+                        .replace(R.id.container, cart)
                         .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).commit()
                     searchView.setVisibility(View.GONE)
                     recyclerView.setVisibility(View.GONE)
                 }
-                R.id.request ->{
+               /* R.id.request ->{
                     request = Request()
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.container, request)
